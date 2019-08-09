@@ -4,6 +4,7 @@ from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views.generic import UpdateView
 from .forms import SignUpForm
+from django.shortcuts import render, redirect, get_object_or_404
 
 def signup(request):
     if request.method == 'POST':
